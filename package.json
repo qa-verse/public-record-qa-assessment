@@ -1,0 +1,28 @@
+{
+  "name": "public-records-qa-assessment",
+  "version": "1.0.0",
+  "description": "Cypress + TypeScript end-to-end test suite for the Public Records Platform QA take-home assessment.",
+  "scripts": {
+    "cy:open": "env -u ELECTRON_RUN_AS_NODE cypress open",
+    "test": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --headed",
+
+    "test:search": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --headed --spec cypress/e2e/search-funnel.cy.ts",
+    "test:checkout": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --headed --spec cypress/e2e/checkout-validation.cy.ts",
+    "test:core": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --headed --spec cypress/e2e/search-funnel.cy.ts,cypress/e2e/checkout-validation.cy.ts",
+    "test:all": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --headed",
+
+    "test:search:headless": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --spec cypress/e2e/search-funnel.cy.ts",
+    "test:checkout:headless": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --spec cypress/e2e/checkout-validation.cy.ts",
+    "test:core:headless": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome --spec cypress/e2e/search-funnel.cy.ts,cypress/e2e/checkout-validation.cy.ts",
+    "test:all:headless": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome",
+
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "cypress": "^14.5.4",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "oneYear": {
+    "expectedLines": ["$420", "Report Package", "12", "MONTH PAYMENT PLAN", "PAYMENT DUE TODAY: $35"],
+    "absentLines": ["ONE-TIME PAYMENT", "LIMIT ONE PER CUSTOMER"]
+  },
+  "singleReport": {
+    "expectedLines": ["$1", "ONE-TIME PAYMENT", "1 REPORT", "LIMIT ONE PER CUSTOMER"],
+    "absentLines": ["MONTH PAYMENT PLAN", "NEXT PAYMENT ON"]
+  }
+}

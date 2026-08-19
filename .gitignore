@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Cypress generated output
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Environment / secrets (none currently used by this project — kept defensively)
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Provided by the employer for this assessment — not resubmitted in the deliverable repo.
+Assessment Brief.pdf
